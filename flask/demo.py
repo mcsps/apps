@@ -15,12 +15,12 @@ def a():
     return message, 200, {'Content-Type': 'text/plain'}
 
 @app.route('/b', methods=['GET', 'POST'])
-def a():
+def b():
     message = "You requested: b"
     return message, 200, {'Content-Type': 'text/plain'}
 
 @app.route('/c', methods=['GET', 'POST'])
-def a():
+def c():
     message = "You requested: c"
     return message, 200, {'Content-Type': 'text/plain'}
 
