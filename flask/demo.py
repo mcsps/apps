@@ -32,7 +32,7 @@ def not_found_error(error):
 @app.errorhandler(500)
 def internal_error(error):
     message = "Something went wrong"
-    return message, 404, {'Content-Type': 'text/plain'}
+    return message, 500, {'Content-Type': 'text/plain'}
 
 if __name__ == '__main__':
 
